@@ -1,8 +1,8 @@
-# RQ Tinkers
+# RQ Tinkers 🍤
 
 ## What is this?
 
-This is a cool repo that will help you play around with RQ on your local machine.
+This is a cool repo 😎 that will help you play around with RQ on your local machine.
 
 ## Pre-Reqs
 
@@ -39,7 +39,7 @@ python3 -m venv .venv && source .venv/bin/activate
 pip install --requirement requirements.txt
 ```
 
-- Start an RQ Worker
+- Start an RQ Worker (this process owns this terminal instance now)
 
 ```sh
 rq worker --with-scheduler 
@@ -47,7 +47,7 @@ rq worker --with-scheduler
 # See: https://hynek.me/til/rq-macos/
 ```
 
-- Run a lesson / module using _main/py_
+- Run a lesson / module using _main/py_ (in future you can use `--help` to see more examples)
 
 ```sh
 python main.py 
