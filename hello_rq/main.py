@@ -3,6 +3,7 @@ from rq import Queue
 
 from hello_rq.lib import count_words_at_url
 
+
 def main(url):
-    q = Queue(connection=Redis())
+    q = Queue("low", connection=Redis())
     result = q.enqueue(count_words_at_url, url)

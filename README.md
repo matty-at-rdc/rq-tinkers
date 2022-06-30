@@ -47,10 +47,21 @@ rq worker --with-scheduler
 # See: https://hynek.me/til/rq-macos/
 ```
 
-- Run a lesson / module using _main/py_ (in future you can use `--help` to see more examples)
+- Run a lesson / module using _main/py_ (use `--help` to see more examples)
 
 ```sh
-python main.py 
+python main.py --help
+# (.venv) matt.cale@ATX-C02F71R1MD6R rq-tinkers % python main.py --help
+# Usage: main.py [OPTIONS] COMMAND [ARGS]...
+
+# Options:
+#   --help  Show this message and exit.
+
+# Commands:
+#   hello-queues-cmd
+#   hello-queues-random-cmd
+#   hello-rq-cmd
+python main.py hello-rq-cmd
 ```
 
 - Observe the worker accomplishing your dreams in the worker process
@@ -60,3 +71,10 @@ python main.py
 # Doing something cool now that I know that https://google.com contains 396 words...
 # 16:50:12 default: Job OK (e5159866-c572-4833-a3b5-3c280b29bcc7)
 ```
+
+## Lessons
+
+The way this is broken down follows the RQ docs for now. 
+
+- First, is the hello world example _hello_rq_.
+- Next up is _hello_queues_ which focuses on the way you can tune queues and jobs to your needs.
